@@ -1,0 +1,10 @@
+div {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+input, button {
+    border-radius: 5px;
+    text-align: center;
+    width: 50px;
+}
