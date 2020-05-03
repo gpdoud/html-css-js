@@ -10,6 +10,7 @@ const dec = () => {
     display(nbr);
 }
 const display = (nbr) => {
+    // document.getElementById("nbr").value = nbr;
     let nbrCtrl = document.getElementById("nbr");
     nbrCtrl.value = nbr;
     nbrCtrl.style.color = (nbr % 2 == 0) ? "red" : "black";
