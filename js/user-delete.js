@@ -35,9 +35,10 @@ const getUser = () => {
 }
 const getUserByPK = (id) => {
     $.getJSON(`${url}/users/${id}`)
-        .done((user) => {
+        .done((jr) => {
+            user = jr.data;
             console.log("User:", user);
-            display(user.data);
+            display(jr.data);
         })
         .fail((err)=> {
             console.error(err);

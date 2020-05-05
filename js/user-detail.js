@@ -1,4 +1,4 @@
-let url = "http://localhost:5000/api";
+let url = "http://localhost:8080";
 
 $().ready(()=>{
 
@@ -6,8 +6,7 @@ $().ready(()=>{
         let userId = $("#userid").val();
         $.getJSON(`${url}/users/${userId}`)
             .done((res)=>{
-                let jsonresp = {};
-                jsonresp.data = res;
+                let jsonresp = res;
                 //jsonresp = res; for students
                 display(jsonresp);
             })
@@ -20,4 +19,8 @@ const display = (jsonresp) => {
     $("#eid").text(user.id);
     $("#eusername").text(user.username);
     $("#efullname").text(user.firstname + " " + user.lastname);
+    $("#ephone").text(user.phoneNumber);
+    $("#eemail").text(user.email);
+    $("#eisreviewer").text(user.isReviewer ? "Yes" : "No");
+    $("#eisadmin").text(user.isAdmin ? "Yes" : "No");
 }

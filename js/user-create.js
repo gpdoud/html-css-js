@@ -1,4 +1,4 @@
-let url = "http://localhost:5000/api";
+let url = "http://localhost:8080";
 
 $().ready(()=>{
 
@@ -9,7 +9,7 @@ $().ready(()=>{
         newUser.password = $("#epassword").val();
         newUser.firstname = $("#efirstname").val();
         newUser.lastname = $("#elastname").val();
-        newUser.phone = $("#ephone").val();
+        newUser.phoneNumber = $("#ephone").val();
         newUser.email = $("#eemail").val();
         newUser.isReviewer = $("#eisreviewer").prop("checked");
         newUser.isAdmin = $("#eisadmin").prop("checked");
