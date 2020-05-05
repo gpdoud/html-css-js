@@ -1,4 +1,4 @@
-let url = "http://localhost:5000/api";
+let url = "http://localhost:8080";
 
 let jsonresp = {};
 
@@ -6,7 +6,7 @@ $().ready( ()=>{
     
     $.getJSON(`${url}/users/`)
         .done( (res)=>{
-            jsonresp.data = res;
+            jsonresp = res;
             display();
             console.log(res);
         })

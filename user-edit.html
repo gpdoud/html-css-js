@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/user-edit.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/user-edit.js"></script>
+</head>
+
+<body>
+    <table class="table table-sm">
+        <tr>
+            <th>Id:</th>
+            <td>
+                <input id="eid" type="number" value="1"> | 
+                <button id="get" class="btn btn-primary btn-sm">Get</button>
+            </td>
+        </tr>
+        <tr>
+            <th>Username:</th>
+            <td>
+                <input id="eusername" type="text" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <td>
+                <input id="epassword" type="password" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th>First name:</th>
+            <td>
+                <input id="efirstname" type="text" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th>Last name:</th>
+            <td>
+                <input id="elastname" type="text" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th>Phone:</th>
+            <td>
+                <input id="ephone" type="text" size="15">
+            </td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>
+                <input id="eemail" type="text" size="35">
+            </td>
+        </tr>
+        <tr>
+            <th>IsReviewer:</th>
+            <td>
+                <input id="eisreviewer" type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <th>IsAdmin:</th>
+            <td>
+                <input id="eisadmin" type="checkbox">
+            </td>
+        </tr>
+    </table>
+    <button id="save" class="btn btn-primary">Save</button>
+</body>
+
+</html>
